@@ -4,9 +4,13 @@
 
 On Shopify, we have exactly 100 sneaker shops, and each of these shops sells only one model of shoe. We want to do some analysis of the average order value (AOV). When we look at orders data over a 30 day window, we naively calculate an AOV of $3145.13. Given that we know these shops are selling sneakers, a relatively affordable item, something seems wrong with our analysis. 
 
-Think about what could be going wrong with our calculation. Think about a better way to evaluate this data. 
-What metric would you report for this dataset?
-What is its value?
+### a) What could go wrong?
+  When creating a program to calculate an AOV for a 30 day window, I too first went to the simple solution of calculating the mean for the column using pandas libraries and naively calculated ~$3,145. Upon further inspection, I discovered 20 records with abnormal order amounts of ~$700,000. These being statistical outliers, I decided to handle these abnormalities by removing any records which fall outside of 3 standard deviations. This gave me a much more reasonable value of $723.26!
+### b) What metric would you report for this dataset?
+  Adjusted AOV
+
+### c) What is its value?
+  $723.26
 
 
 Question 2: For this question you’ll need to use SQL. Follow this link to access the data set required for the challenge. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
