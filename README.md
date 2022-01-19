@@ -24,6 +24,7 @@
 ### b) What is the last name of the employee with the most orders?
 SQL Query:
 <SELECT LastName FROM (SELECT e.EmployeeID, LastName, Count(OrderID) AS Num_Orders FROM Employees as e, Orders as o WHERE e.EmployeeID = o.EmployeeID GROUP BY o.EmployeeID ORDER BY Num_Orders DESC LIMIT 1);>
+
   Result: 
   Peacock
 ### c) What product was ordered the most by customers in Germany?
