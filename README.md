@@ -1,1 +1,1 @@
-# shopify2022_data_analytics_challenge
+# Zane Chiang takes on the Shopify 2022 Data Analytics Challenge!
